@@ -15,12 +15,12 @@ body {
 }
 
 header {
-    background: #ffffff;
+    background: #0c0c0c;
     height: 100px;
     width: 100%;
     margin: 0px;
     text-align: center;
-    color: black;
+    color: rgb(253, 247, 247);
 }
 
 :hover {
