@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="icon" href="imagenes/Icono.png">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!--Pautas a tener en cuenta en la confección del trabajo practico:
+• Letra del cuerpo: Times New Roman y altura 12.
+• Letra de los títulos: Liberation Serif y altura 20.
+• Encabezado: logo de la institución, carrera, nombre y apellido.
+• Pie de página: número de página centrado al medio.
+• La hoja de la caratula no puede tener encabezado y pie de página.
+• Una portada creativa.
+• SIN INTERLINEADO-->
+    <div class="div1">
+        <header id="cabeza">
+            <h1>Investigación de JavaScript</h1>
+
+
+        </header>
+    </div>
+
+    <h2 class="h2">¿Qué versiones de JavaScript hay en el mercado?.</h2>
+    <!--Pregunta uno con etiqueta de subtitulo-->
+    <ul>
+        <li>Mocha (1995)</li>
+        <li>LiveScript (1995)</li>
+        <li>JavaScript(1995)</li>
+        <li>ECMA1-ES1 (1997-1997)</li>
+        <li>ES3 (1999) </li>
+        <li>ES4(2008)</li>
+        <li>ES5(2009)</li>
+        <li>ES5.1(2011)</li>
+        <li>ES6 (2012)</li>
+        <li>ES7 (2016)</li>
+        <li>ES8 (2017)</li>
+        <li>ES9 (2018)</li>
+        <li>ES10 (2019)</li>
+        <li>ES11 (2020)</li>
+        <li>ECMAScript</li>
+
+    </ul>
+    <!--etiqueta de lista (punto uno)-->
+
+    <h2> ¿Cómo se integra JavaScript a HTML?.</h2>
+    <!--subtitulo punto 2-->
+    <p>Solo hay tres formas de integrar JS a HTML y son:</p>
+    <!--Etiqueta p de texto-->
+    <ol>
+        <li>La primera es adentro de la etiqueta head, como si fuera una etiqueta básica de HTML. Ejemplo: </li>
+        <img src="imagenes/Ejemplo1.png" alt="ejemplos" />
+        <li>La segunda se le llama archivo externo, se usa con el atributo "src", dentro de este atributo se pone la ruta del archivo de JS. Tambien es utilizado dentro del head. Ejemplo: </li> <img src="imagenes/Ejemplo2.png" alt="ejemplos"></img>
+        <li> La tercera es adentro de la etiqueta body como si fuera un etiqueta básica de HTML. Ejemplo: </li> <img src="imagenes/Ejemplo3.png" alt="ejemplo" />
+    </ol>
+    <!--Fin del punto numero dos-->
+    <h2>¿Cómo es el manejo de las variables, tipos de datos y expresiones regulares en JS?.</h2>
+    <!--Subtitulo punto numero tres-->
+    <p>Una variable es un elemento de datos con nombre cuyo valor puede cambiar durante el curso de la ejecución de un programa, en JS hay 3 variables básicas:</p>
+    <ul>
+        <li>Var: Las variables var pueden ser modificadas y re-declaradas dentro de su ámbito</li>
+        <li>Let: las variables let pueden ser modificadas, pero no re-declaradas</li>
+        <li>Const: las variables const no pueden ser modificadas ni re-declaradas.</li>
+    </ul>
+    <p>JavaScript tiene la característica de ser un lenguaje débilmente tipado con tipado dinámico, es decir, que todos los tipos de datos se pueden asignar o reasignar a las variables que los almacenan. Por ejemplo, una variable que almacena un dato numérico
+        puede posteriormente almacenar un dato de tipo booleano.</p>
+    <p>Las expresiones regulares son patrones que se utilizan para hacer coincidir combinaciones de caracteres en cadenas. En JavaScript, las expresiones regulares también son objetos.</p>
+    <!--Fin de punto numero tres-->
+    <h2>¿Cómo son todas las formas de declaración de funciones en JS?.</h2>
+    <!--Subtitulo del punto cuatro-->
+    <p>Hay 7 formas de declarar una funcion: </p>
+    <ol>
+        <!--Lista ordenada-->
+        <li>Function declaration:Este tipo de función se creará con la palabra reservada function, seguido obligatoriamente por un nombre, que identificará a nuestra función, una lista de parámetros entre paréntesis, y el símbolo de las llaves {}. Qué será
+            el que delimite el contenido de nuestro conjunto de sentencias.</li>
+        <li>Function expression:La sintaxis para crear estas funciones es similar a la anterior. La única diferencia es que la definición de nuestra nueva función no comienza por instrucción function y el nombre de la función es opcional.Este tipo de funciones
+            las podemos almacenar en una variable. Lo cual nos permite utilizarlas en este ejemplo: </li>
+        <li>IIFE (Immediately Invoked Function Expression): Para crear una función de este tipo deberemos crearla en un operador de agrupación (). Seguido de (), lo que posibilitará el interpretado directamente en el motor de JavaScript. Ejemplo:
+            <li>Shorthand method definition:Este forma de crear las funciones puede ser utilizado como método en la declaración de un objeto o en las clases de ES6. Para crear este tipo de función debemos asignar un nombre de función seguido de una lista
+                de parámetros entre paréntesis y los símbolos de llaves para delimitar el cuerpo de las instrucciones. Ejemplo:</li>
+            <li>Arrow function: La forma de crear estas funciones es la siguiente: Primero definiremos la lista de parámetros, en caso de ser necesario, entre paréntesis seguido del símbolo => y las {} para indicar las instrucciones que se van a realizar.
+                Además de la sintaxis que es diferente a las anteriores este tipo de funciones tienen las siguientes características.
+                <ul>
+                    <!--Lista anidada desordenada-->
+                    <li>-Las "arrow function" no crean su propio contexto al ejecutarse. Al contrario que las "function expression" o las "function declaration" que crea su propio contexto.</li>
+                    <li>Las "arrow function" son anónimas.</li>
+                    <li>El objeto arguments no se encuentra en el contexto de la función.</li>
+                    <li>Si al definir la función no utilizamos el símbolo de las llaves. La función devolverá como resultado de la función el resultado de la ejecución de la instrucción que hayamos indicado.</li>
+                </ul>
+            </li>
+            <li>Generator function:La sintaxis de estas funciones es igual a las "function declaration" o "function expression". Sólo debemos utilizar el símbolo * al comienzo de la definición de nuestra función. Otra diferencia de estas funciones es que
+                siempre retorna un objeto con la siguiente estructura cada vez que invoquemos a la función next(). Ejemplo</li>
+            <li>Function constructor: Las funciones en Javascript, son funciones, y poseen el constructor Function. Por ello podremos crear una variable que invoque a un objeto Function. Cuando invoquemos a este objeto podremos enviar todos los argumentos
+                que deseemos. Los primeros n argumentos serán los parámetros de nuestra función y el último argumento será el código de nuestra función.</li>
+    </ol>
+    <!--Fin del punto numero cuatro-->
+    <h2>¿Cuáles son los operadores y conversión entre tipos?.</h2>
+    <!--Subtitulo del puntto cinco-->
+    <p>Hay dos tipos de conversión, la implícita y la explícita: En la implícita se convierte un tipo de dato de menor rango a un supertipo (tipo de dato de mayor rango); este tipo de conversión lo realiza el compilador, ya que no hay pérdida de datos si,
+        por ejemplo, se pasa un int (tipo entero) a long.</p>
+    <h2>¿Cuáles son las estructura de control de JS?.</h2>
+    <p>Existen varias estructuras de control distintas y cada una se utilizará en el momento oportuno.</p>
+    <p>Empecemos por la más usada de todas:</p>
+    <h3>if/si:</h3>
+    <p>La sentencia if especifica un bloque de código que se ejecuta si una condición es cierta y da la oportunidad de ejecutar otro bloque de código distinto si resulta que no es cierta. Su sintaxis es la siguiente:</p>
+    <img src="imagenes/ejercicio6IF.png" alt="si">
+    <!--Imagen numero 1-->
+    <h3>Else/sino:</h3>
+    <p>La parte de else es opcional, y especifica un bloque de código que se ejecuta si la condición es falsa.Su sintaxis es la siguiente:</p>
+    <img src="imagenes/ejercicio6ELSE.png" alt="sino">
+    <h3>Múltiples ELSE:</h3>
+    <p>También puede darse el caso de que necesitemos varias cláusulas de rebote.Eso nos permite manejar distintas posibilidades en la misma estructura de control. Su sintaxis es la siguiente:</p>
+    <img src="imagenes/ejercicio6MultipleELSE.png" alt="multiples sino">
+    <h3>Switch/Según:</h3>
+    <p>Se utiliza para hacer diferentes acciones basadas en diferentes condiciones.Consiste en darle un valor y comprobar si ese valor coincide con algún caso.En el caso que coincida, ejecutamos un bloque de código específico. Su sintaxis es la siguiente:</p>
+    <img src="imagenes/ejrcicio6SWITCH.png" alt="segun">
+    <h3>For/Por:</h3>
+    <p>Nos permite ejecutar el código un número determinado de veces. Su sintaxis es la siguiente:</p>
+    <ul>
+        <li>inicialización: Se ejecuta antes de que empiece el bloque de código a repetir.</li>
+        <li>condición: Define la condición por la que el bloque de código se va a ejecutar.</li>
+        <li>actualización: Se ejecuta después de que acabe el bloque de código a repetir.</li>
+    </ul>
+    <img src="imagenes/ejercicio6FOR.png" alt="por">
+
+
+
+    <h2>¿Qué es el objeto dom en JS? Y ¿Cómo trabaja?.</h2>
+    <p>Las siglas DOM significan Document Object Model, o lo que es lo mismo, la estructura del documento HTML. Una página HTML está formada por múltiples etiquetas HTML, anidadas una dentro de otra, formando un árbol de etiquetas relacionadas entre sí,
+        que se denomina árbol DOM.</p>
+    <p> En Javascript, cuando nos referimos al DOM nos referimos a esta estructura, que podemos modificar de forma dinámica desde Javascript, añadiendo nuevas etiquetas, modificando o eliminando otras, cambiando sus atributos HTML, añadiendo clases, cambiando
+        el contenido de texto, etc...</p>
+    <p>Al estar "amparado" por un lenguaje de programación, todas estas tareas se pueden automatizar, incluso indicando que se realicen cuando el usuario haga acciones determinadas, como por ejemplo: pulsar un botón, mover el ratón, hacer click en una parte
+        del documento, escribir un texto, etc...</p>
+    <p>El DOM representa un documento HTML completo como un solo objeto. Para crear el DOM, el navegador web que lee el archivo HTML toma todas sus partes, desde el elemento
+        <html> raíz hasta las etiquetas <span> más pequeñas, y las devuelve como un objeto que el JavaScript comprende.</p>
+
+    <h2>¿Qué función tiene en JS el Object Map?.</h2>
+    <p>El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos. Ejemplo:</p>
+    <img src="imagenes/objetmap.png" alt="objetmap">
+
+    <h2>¿Cuáles son todos los eventos que trabaja JS?.</h2>
+    <h3>Los eventos que traba JS son los siguientes:</h3>
+    <ul>
+        <li>onblur: Un elemento pierde el foco.</li>
+        <li>onchange: Un elemento ha sido modificado.</li>
+        <li>onclick:Pulsar y soltar el ratón.</li>
+        <li>ondblclick:Pulsar dos veces seguidas con el ratón.</li>
+        <li>onfocus:Un elemento obtiene el foco.</li>
+        <li>onkeydown:Pulsar una tecla y no soltarla.</li>	
+        <li>onkeypress:Pulsar una tecla.</li>
+        <li>onkeyup: Soltar una tecla pulsada.</li>
+        <li>onload: Página cargada completamente.</li>
+        <li>onmousedown: Pulsar un botón del ratón y no soltarlo.</li>
+        <li>onmousemove:Mover el ratón.</li>
+        <li>onmouseover: El ratón "entra" en el elemento.</li>
+        <li>onmouseup: Soltar el botón del ratón.</li>
+        <li>onreset: Inicializar el formulario.</li>
+        <li>onresize: Modificar el tamaño de la ventana.</li>
+        <li>onselect: Seleccionar un texto.</li>
+        <li>onsubmit: Enviar el formulario.</li>
+        <li>onunload: Se abandona la página, por ejemplo al cerrar el navegador.</li>
+    </ul>
+    <h2> Con toda la investigación que generaron. deben de generar un formulario que realice las siguientes funciones:
+        <ol>
+            <li>Qué obtenga los datos del input.</li>
+            <p>Podemos obtener el valor de la entrada sin envolverlo dentro de un elemento de forma en JavaScript seleccionando el elemento de entrada DOM y usando la propiedad value. JavaScript tiene diferentes métodos para seleccionar el elemento de entrada DOM. Cada método a continuación tendrá un ejemplo de código, que puede ejecutar en su máquina.</p>
+            <li>Qué verifique los datos que se ingresan en el input.</li>
+            <p>El manejador de eventos onsubmit de la etiqueta <form>, desde el que se hace una llamada a la función validar(). Esta función es la que se muestra seguidamente y tiene como objetivo comprobar que el usuario ha introducido en los campos lo que consideramos adecuado. Es muy difícil impedir que un usuario nos engañe si quiere, pero podemos delimitar bastante la variedad de cosas válidas que puede escribir en los campos de texto del formulario.</p>
+            <li>Qué el formulario presente una calculo de sumatoria para validar qué "no sos un robot”.</li>
+            <p>CAPTCHA es un pequeño programa que "verifica" que el usuario de una web es realmente una persona. Google ofrece servicios de captcha pero muchas veces, o no sabemos bien como utilizarlos, no nos interesa, o sencillamente, eres de los míos que te gusta hacer las cosas por mi mismo, ademas, de que intento "evitar" el uso del gigante Google todo lo que puedo. El clásico captcha es una imagen con un texto, en los inicios eran solo números, con algún tipo de "distorsión" por la que un programa de reconocimiento de texto no seria capaz de descifrar, y solo un humano, puede ver de verdad que texto se esconde en la imagen mostrada.</p>
+        </ol>
+    </h2>
+
+
+</body>
+
+</html>
