@@ -12,3 +12,7 @@ body {
     color: rgb(17, 17, 17);
     background: rgb(85, 83, 81);
 }
+
+header {
+    color: aliceblue;
+}
