@@ -1,7 +1,10 @@
+:root{
+    --color-principal: black;
+}
 .h2 {
     font-family: serif;
     font-size: 20pt;
-    color: black;
+    color: var(--color-principal)
 }
 
 .p {
@@ -10,12 +13,12 @@
 }
 
 body {
-    color: rgb(17, 17, 17);
+    color: var(--color-principal);
     background: rgb(85, 83, 81);
 }
 
 header {
-    background: #0c0c0c;
+    background: var(--color-principal); 
     height: 100px;
     width: 100%;
     margin: 0px;
